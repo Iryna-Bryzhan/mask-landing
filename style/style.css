@@ -510,6 +510,7 @@ body:after {
 }
 .reasons .reasons-content-left img {
   width: 100%;
+  max-height: 630px;
 }
 .reasons .reasons-content-right {
   width: 57%;
@@ -546,7 +547,7 @@ body:after {
   margin-top: 35px;
   display: flex;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 35px 26px;
 }
 .reasons .reasons-content-right .reasons-content-right-items .reason-item {
   max-width: 312px;
@@ -1039,31 +1040,37 @@ body:after {
     border-right: none;
     margin-bottom: 20px;
   }
-  .footer .footer-content {
-    flex-direction: column;
-    padding: 43px 0;
+  .contact .contact-icons .contact-icon .contact-icon-img img {
+    width: 30px;
+    height: 30px;
   }
-  .footer .footer-content .footer-title {
+  .contact .contact-icons .contact-icon .contact-icon-info .contact-icon-info-title {
     font-size: 18px;
   }
+  .contact .contact-icons .contact-icon .contact-icon-info .contact-icon-info-title {
+    font-size: 16px;
+  }
+  .footer .footer-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .footer .footer-content .footer-logo {
+    width: 100%;
+  }
   .footer .footer-content .footer-logo .footer-text {
-    margin-bottom: 30px;
+    max-width: 100%;
+    margin-bottom: 40px;
   }
-  .footer .footer-content .footer-social .footer-social-item .social-items {
-    margin-left: 35px;
+  .footer .footer-content .footer-memu {
+    width: 35%;
+    margin-right: 50px;
   }
-  .footer .copyright {
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24px;
-    color: rgb(97, 103, 119);
-    line-height: 30px;
-    text-align: center;
-    margin-bottom: 30px;
+  .footer .footer-content .footer-social {
+    width: 35%;
   }
 }
-@media (min-width: 401px) {
+@media (min-width: 401px) and (max-width: 767px) {
   .footer .footer-content {
     flex-direction: row;
     flex-wrap: wrap;
