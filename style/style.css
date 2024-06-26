@@ -167,6 +167,7 @@ body:after {
 .header .mobile-menu .mobile-menu-list {
   list-style: none;
   text-align: center;
+  padding: 0;
   padding-top: 50px;
 }
 .header .mobile-menu .mobile-menu-list .menu-item {
