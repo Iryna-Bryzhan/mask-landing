@@ -151,6 +151,8 @@ body:after {
 }
 .header .mobile-menu {
   display: none;
+  flex-direction: column;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -168,7 +170,6 @@ body:after {
   list-style: none;
   text-align: center;
   padding: 0;
-  padding-top: 50px;
 }
 .header .mobile-menu .mobile-menu-list .menu-item {
   margin: 20px 0;
@@ -179,6 +180,10 @@ body:after {
   font-size: 24px;
   font-weight: 700;
   color: rgb(12, 18, 45);
+}
+.header .mobile-menu .header-button {
+  display: block;
+  text-align: center;
 }
 
 .main {
